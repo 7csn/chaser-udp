@@ -14,7 +14,7 @@ use chaser\stream\traits\ServerContext;
  *
  * @package chaser\udp
  */
-class UdpServer extends ConnectionlessServer implements UdpServerInterface
+class UdpServer extends ConnectionlessServer
 {
     use ServerContext, UdpService;
 
