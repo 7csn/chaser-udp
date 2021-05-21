@@ -2,7 +2,7 @@
 
 namespace chaser\udp;
 
-use chaser\stream\subscribers\ClientSubscriber;
+use chaser\stream\subscribers\ClientSubscriber as StreamClientSubscriber;
 
 /**
  * udp 客户端事件订阅类
@@ -11,6 +11,6 @@ use chaser\stream\subscribers\ClientSubscriber;
  *
  * @property UdpClient $client
  */
-class UdpClientSubscriber extends ClientSubscriber
+class ClientSubscriber extends StreamClientSubscriber
 {
 }

@@ -11,7 +11,7 @@ use chaser\stream\interfaces\parts\ServiceInterface;
  *
  * @see ServiceInterface
  */
-trait UdpService
+trait Service
 {
     /**
      * @inheritDoc

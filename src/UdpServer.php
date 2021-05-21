@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace chaser\udp;
 
-use chaser\container\ContainerInterface;
-use chaser\reactor\Driver;
 use chaser\stream\ConnectionlessServer;
 use chaser\stream\traits\ServerContext;
 
@@ -16,23 +14,23 @@ use chaser\stream\traits\ServerContext;
  */
 class UdpServer extends ConnectionlessServer
 {
-    use ServerContext, UdpService;
-
-    /**
-     * @inheritDoc
-     */
-    public function __construct(ContainerInterface $container, Driver $reactor, string $target)
-    {
-        parent::__construct($container, $reactor, $target);
-
-        $this->reusePort();
-    }
+    use ServerContext, Service;
 
     /**
      * @inheritDoc
      */
     public static function subscriber(): string
     {
-        return UdpServerSubscriber::class;
+        return ServerSubscriber::class;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    protected function initCommon(): void
+    {
+        parent::initCommon();
+
+        $this->reusePort();
     }
 }

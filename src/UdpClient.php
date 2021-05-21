@@ -6,8 +6,7 @@ namespace chaser\udp;
 
 use chaser\stream\ConnectionlessClient;
 use chaser\stream\interfaces\parts\NetworkAddressInterface;
-use chaser\stream\traits\ClientContext;
-use chaser\stream\traits\NetworkAddress;
+use chaser\stream\traits\{ClientContext, NetworkAddress};
 
 /**
  * udp 客户端类
@@ -16,13 +15,13 @@ use chaser\stream\traits\NetworkAddress;
  */
 class UdpClient extends ConnectionlessClient implements NetworkAddressInterface
 {
-    use ClientContext, NetworkAddress, UdpService;
+    use ClientContext, NetworkAddress, Service;
 
     /**
      * @inheritDoc
      */
     public static function subscriber(): string
     {
-        return UdpClientSubscriber::class;
+        return ClientSubscriber::class;
     }
 }
