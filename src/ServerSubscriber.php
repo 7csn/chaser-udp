@@ -11,7 +11,7 @@ use chaser\stream\subscribers\ConnectionlessServerSubscriber;
  *
  * @package chaser\udp
  *
- * @property UdpServer $server
+ * @property Server $server
  */
 class ServerSubscriber extends ConnectionlessServerSubscriber
 {

@@ -12,7 +12,7 @@ use chaser\stream\traits\ServerContext;
  *
  * @package chaser\udp
  */
-class UdpServer extends ConnectionlessServer
+class Server extends ConnectionlessServer
 {
     use ServerContext, Service;
 

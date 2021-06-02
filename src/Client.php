@@ -13,7 +13,7 @@ use chaser\stream\traits\{ClientContext, NetworkAddress};
  *
  * @package chaser\udp
  */
-class UdpClient extends ConnectionlessClient implements NetworkAddressInterface
+class Client extends ConnectionlessClient implements NetworkAddressInterface
 {
     use ClientContext, NetworkAddress, Service;
 

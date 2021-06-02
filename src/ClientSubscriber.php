@@ -9,7 +9,7 @@ use chaser\stream\subscribers\ClientSubscriber as StreamClientSubscriber;
  *
  * @package chaser\udp
  *
- * @property UdpClient $client
+ * @property Client $client
  */
 class ClientSubscriber extends StreamClientSubscriber
 {
