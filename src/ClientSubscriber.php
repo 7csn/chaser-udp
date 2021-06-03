@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace chaser\udp;
 
-use chaser\stream\subscribers\ClientSubscriber as StreamClientSubscriber;
+use chaser\stream\subscriber\ClientSubscriber as StreamClientSubscriber;
 
 /**
  * udp 客户端事件订阅类

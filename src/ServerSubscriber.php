@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace chaser\udp;
 
-use chaser\stream\subscribers\ConnectionlessServerSubscriber;
+use chaser\stream\subscriber\ConnectionlessServerSubscriber;
 
 /**
  * udp 服务器事件订阅类

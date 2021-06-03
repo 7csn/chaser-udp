@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace chaser\udp;
 
-use chaser\stream\interfaces\parts\ServiceInterface;
+use chaser\stream\interfaces\part\ServiceInterface;
 
 /**
  * udp 服务特征

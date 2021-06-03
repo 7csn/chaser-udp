@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace chaser\udp;
 
 use chaser\stream\ConnectionlessClient;
-use chaser\stream\interfaces\parts\NetworkAddressInterface;
+use chaser\stream\interfaces\part\NetworkAddressInterface;
 use chaser\stream\traits\{ClientContext, NetworkAddress};
 
 /**
