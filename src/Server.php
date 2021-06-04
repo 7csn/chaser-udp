@@ -19,14 +19,6 @@ class Server extends ConnectionlessServer
     /**
      * @inheritDoc
      */
-    public static function subscriber(): string
-    {
-        return ServerSubscriber::class;
-    }
-
-    /**
-     * @inheritDoc
-     */
     protected function initCommon(): void
     {
         parent::initCommon();
