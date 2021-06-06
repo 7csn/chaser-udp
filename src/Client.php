@@ -16,12 +16,4 @@ use chaser\stream\traits\{ClientContext, NetworkAddress};
 class Client extends ConnectionlessClient implements NetworkAddressInterface
 {
     use ClientContext, NetworkAddress, Service;
-
-    /**
-     * @inheritDoc
-     */
-    public static function subscriber(): string
-    {
-        return ClientSubscriber::class;
-    }
 }
